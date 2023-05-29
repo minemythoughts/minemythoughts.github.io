@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>MineMyThoughts Store</title>
+  <link rel="stylesheet" href="../assets/css/store.css">
+  <style>
+    .merch-item {
+      position: relative;
+      display: inline-block;
+      margin: 10px;
+      cursor: pointer;
+    }
+
+    .merch-item img {
+      width: 200px;
+      height: 200px;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .merch-item:hover img {
+      transform: scale(1.1);
+    }
+
+    .pulse {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      background-color: rgba(0, 255, 0, 0.5);
+      animation: pulseEffect 1s ease-in-out infinite;
+      pointer-events: none;
+    }
+
+    @keyframes pulseEffect {
+      0% {
+        transform: translate(-50%, -50%) scale(0.8);
+        opacity: 1;
+      }
+      70% {
+        transform: translate(-50%, -50%) scale(1.2);
+        opacity: 0;
+      }
+      100% {
+        transform: translate(-50%, -50%) scale(0.8);
+        opacity: 0;
+      }
+    }
+  </style>
+<body>
+  <header>
+    <h1>MineMyThoughts Store Hub</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Shop</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <main>
+    <section id="featured">
+      <h2>Featured Products</h2>
+      <!-- Add your featured product images and descriptions here -->
+    </section>
+    
+    <section id="new-arrivals">
+      <h2>New Arrivals</h2>
+      <!-- Add your new arrival product images and descriptions here -->
+    </section>
+    
+    <section id="best-sellers">
+      <h2>Best Sellers</h2>
+      <!-- Add your best-selling product images and descriptions here -->
+    </section>
+  </main>
+  
+  <footer>
+    <p>&copy; 2023 MineMyThoughts. All rights reserved.</p>
+  </footer>
+</body>
+</html>
